@@ -1,0 +1,829 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --C-cyan: #00c4f2;
+  --C-black: #252a3a;
+  --C-blue: #3f3d56;
+  --C-light-gray: #f2f2f2;
+  --main-transition: 0.3s;
+  --section-margin: 80px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: var(--C-light-gray);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+button {
+  cursor: pointer;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+/* Start Component*/
+.right-section-heading {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.right-section-heading h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--C-black);
+  padding-right: 25px;
+}
+.right-section-heading img {
+  height: 30px;
+  margin-right: 10px;
+}
+.left-section-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.left-section-heading h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--C-black);
+  padding-left: 25px;
+}
+.left-section-heading img {
+  height: 30px;
+  transform: rotate(180deg);
+  margin-left: 10px;
+}
+/* End Component*/
+/*_____________________________________________*/
+/* Start Header*/
+header {
+  height: 70px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  header {
+    height: 40px;
+  }
+}
+header .logo img {
+  height: 70px;
+}
+@media (max-width: 767px) {
+  header .logo img {
+    height: 40px;
+  }
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+}
+header nav li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: var(--C-black);
+  padding: 0 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  height: 50px;
+  font-size: 18px;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  header nav li a {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
+header nav li a::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--C-cyan);
+  bottom: 0;
+  left: -100%;
+  transition: var(--main-transition);
+}
+header nav li a.active::before {
+  left: 0;
+}
+header nav li:hover a::before {
+  left: 0;
+}
+header .language {
+  position: relative;
+}
+header .language a {
+  color: var(--C-black);
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  header .language a {
+    font-size: 12px;
+  }
+}
+header .language ul {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: var(--C-light-gray);
+  border: 1px solid var(--C-black);
+  width: 120px;
+  z-index: 100;
+  display: none;
+}
+header .language ul li {
+  width: 100%;
+  padding: 10px 10px;
+  color: var(--C-black);
+  font-weight: bold;
+  cursor: pointer;
+}
+header .language ul li a {
+  text-transform: capitalize;
+}
+header .language ul li:hover {
+  background-color: #bababa;
+}
+header .language ul::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent var(--C-black) transparent;
+}
+/* End Header*/
+/*_____________________________________________*/
+/*Start Landing*/
+.landing {
+  position: relative;
+  z-index: -1;
+}
+.landing .container {
+  min-height: calc(100vh - 70px);
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+}
+@media (max-width: 991px) {
+  .landing .container {
+    min-height: calc(100vh - 40px);
+    flex-direction: column;
+    text-align: center;
+    row-gap: 50px;
+  }
+}
+.landing .text {
+  max-width: 650px;
+}
+.landing .text h1 {
+  color: var(--C-black);
+  text-transform: uppercase;
+  font-size: 38px;
+  margin: 0;
+}
+.landing .text h1 span {
+  color: var(--C-cyan);
+}
+.landing .text p {
+  /* max-width: 400px; */
+  color: var(--C-blue);
+  font-size: 18px;
+  line-height: 2;
+  margin: 0;
+}
+.landing .image img {
+  width: 380px;
+}
+@media (max-width: 991px) {
+  .landing .text h1 {
+    font-size: 28px;
+  }
+  .landing .text p {
+    font-size: 14px;
+    max-width: 400px;
+    margin: auto;
+  }
+  .landing .image img {
+    width: 280px;
+  }
+}
+@media (max-width: 767px) {
+  .landing .text p {
+    max-width: 320px;
+  }
+}
+/* End Landing*/
+/*_____________________________________________*/
+/* Start Former Section*/
+.former {
+  position: relative;
+  padding-top: var(--section-margin);
+  padding-bottom: var(--section-margin);
+}
+.former .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.former .info {
+  text-align: center;
+}
+.former .info img {
+  width: 300px;
+}
+@media (max-width: 767px) {
+  .former .info img {
+    width: 250px;
+  }
+}
+.former .info h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--C-black);
+}
+.former .info h3 span {
+  color: var(--C-cyan);
+}
+.former .description p {
+  font-size: 18px;
+  max-width: 400px;
+  padding-left: 20px;
+  line-height: 1.5;
+  color: var(--C-black);
+  margin: 0 auto;
+}
+.former .line {
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background-color: var(--C-cyan);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 991px) {
+  .former .line {
+    display: none;
+  }
+  .former .description p {
+    max-width: 600px;
+    padding: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .former .description p {
+    max-width: 320px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+/* End Former Section*/
+/*_____________________________________________*/
+/* Start Inscription Section */
+.inscription {
+  position: relative;
+  margin-top: var(--section-margin);
+  margin-bottom: var(--section-margin);
+}
+.inscription .container .form,
+.inscription .container .radio-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  row-gap: 20px;
+  position: relative;
+  margin-top: 20px;
+}
+.inscription .container .input-info {
+  position: relative;
+}
+.inscription .form .form-input,
+.inscription .form #level {
+  height: 40px;
+  width: 300px;
+  background-color: #f2f2f2;
+  outline: none;
+  border: 3px solid;
+  border-color: transparent var(--C-cyan) var(--C-cyan) transparent;
+}
+.inscription .form .left-border {
+  border-color: transparent transparent var(--C-cyan) var(--C-cyan);
+}
+.inscription .form #level {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  text-transform: uppercase;
+  padding-left: 6px;
+  color: var(--C-black);
+}
+.inscription .form label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  color: var(--C-black);
+}
+.inscription .form .form-input:not(:placeholder-shown) ~ label {
+  display: none;
+}
+.inscription .radio-form h3 {
+  color: var(--C-black);
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.inscription .radio-form .radio-label {
+  text-align: center;
+}
+.inscription .radio-form .radio-label label {
+  color: var(--C-black);
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 0 30px;
+  position: relative;
+}
+.inscription .radio-form .radio-label input[type="radio"] {
+  display: none;
+}
+.inscription .radio-form .radio-label span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cdcbcb;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+}
+.inscription .radio-form .radio-label span::after {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  background-color: var(--C-cyan);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+.inscription
+  .radio-form
+  .radio-label
+  input[type="radio"]:checked
+  ~ span::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+.inscription form .submit-btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.inscription form .submit-btn button,
+.certificate form button {
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: var(--C-blue);
+  color: white;
+  border: none;
+  border-radius: 15px;
+}
+@media (max-width: 991px) {
+  .inscription form .submit-btn button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  .certificate form button {
+    font-size: 14px;
+    padding: 12px 12px;
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+.inscription .certificate {
+  padding: 0 80px;
+}
+@media (max-width: 991px) {
+  .inscription .certificate {
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inscription .certificate form {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+  }
+}
+.inscription .certificate form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.inscription .certificate h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--C-black);
+}
+.certificate form .certificate-input {
+  position: relative;
+}
+.certificate form .certificate-input input {
+  height: 40px;
+  width: 300px;
+  background-color: #f2f2f2;
+  outline: none;
+  border: 3px solid var(--C-cyan);
+}
+.certificate form label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  color: var(--C-black);
+}
+.certificate .certificate-input input:not(:placeholder-shown) ~ label {
+  display: none;
+}
+.certificate .remarque {
+  max-width: 280px;
+}
+.certificate .remarque h4 {
+  color: var(--C-black);
+}
+.certificate .remarque h4 span {
+  color: red;
+}
+/* End Inscription Section */
+/*_____________________________________________*/
+/* Start Archive Section*/
+.archive {
+  position: relative;
+  margin-top: var(--section-margin);
+  margin-bottom: var(--section-margin);
+}
+.archive .go-network-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .archive .go-network-logo img {
+    width: 300px;
+  }
+}
+.archive .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 80px;
+  width: 80%;
+  padding: 80px 0;
+}
+.archive .container::before {
+  content: " ";
+  width: 90%;
+  height: 3px;
+  background-color: var(--C-cyan);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.archive .odd-year {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.archive .even-year {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.archive .year {
+  position: relative;
+  height: 120px;
+  width: 120px;
+  background-color: white;
+  border-radius: 50%;
+  border-top: 4px solid;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-color: #bababa #bababa transparent #bababa;
+}
+.archive .year span {
+  color: var(--C-black);
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.archive .odd-year .year span {
+  top: 150%;
+}
+.archive .even-year .year span {
+  bottom: 150%;
+}
+.archive .year::before {
+  content: "";
+  height: 41px;
+  width: 2px;
+  background-color: var(--C-cyan);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.archive .odd-year .year::before {
+  top: 100%;
+}
+.archive .even-year .year::before {
+  bottom: 100%;
+}
+.archive .year img {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .archive .year span {
+    font-size: 14px;
+  }
+  .archive .odd-year .year span {
+    top: 160%;
+  }
+  .archive .even-year .year span {
+    bottom: 160%;
+  }
+  .archive .year {
+    height: 80px;
+    width: 80px;
+  }
+  .archive .year img {
+    width: 60px;
+  }
+}
+/* End Archive Section*/
+/*_____________________________________________*/
+/* Start contact Section*/
+.contact {
+  position: relative;
+  margin-top: var(--section-margin);
+  margin-bottom: var(--section-margin);
+}
+.contact .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 200px;
+}
+.contact .text h3 {
+  color: var(--C-blue);
+  font-size: 30px;
+  max-width: 350px;
+}
+@media (max-width: 767px) {
+  .contact .text h3 {
+    font-size: 22px;
+  }
+}
+.contact .form .contact-info {
+  position: relative;
+  margin-bottom: 20px;
+}
+.contact .form .form-input,
+.contact .form textarea {
+  height: 40px;
+  width: 300px;
+  position: relative;
+  background-color: #f2f2f2;
+  outline: none;
+  border: 3px solid;
+  border-color: transparent var(--C-blue) var(--C-blue) transparent;
+}
+.contact .form .left-border {
+  border-color: transparent transparent var(--C-blue) var(--C-blue);
+}
+.contact .form label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  color: var(--C-black);
+}
+.contact .form .form-input:not(:placeholder-shown) ~ label,
+.contact .form .message:not(:placeholder-shown) ~ label {
+  display: none;
+}
+.contact .form button {
+  height: 40px;
+  width: 300px;
+  background-color: var(--C-blue);
+  outline: none;
+  border: none;
+}
+.contact .form button a {
+  color: white;
+}
+/* End Contact Section*/
+/*_____________________________________________*/
+/* Start Footer Section*/
+footer {
+  position: relative;
+  height: 80px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .cisco-logo img {
+  height: 50px;
+}
+@media (max-width: 767px) {
+  footer .cisco-logo img {
+    height: 30px;
+  }
+}
+footer .social-media a {
+  font-size: 20px;
+  color: var(--C-blue);
+  margin-right: 20px;
+}
+/* End Footer Section*/
+/*_____________________________________________*/
+/* Start Connect Section*/
+.connect {
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  left: 100%;
+  display: none;
+}
+.connect .container {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 150px;
+}
+.connect .form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  margin-bottom: 20px;
+}
+.connect h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--C-blue);
+}
+.connect .container .input-info {
+  position: relative;
+}
+.connect .form .form-input {
+  height: 40px;
+  width: 300px;
+  background-color: #f2f2f2;
+  outline: none;
+  border: 3px solid var(--C-blue);
+}
+@media (max-width: 767px) {
+  .connect .container {
+    height: calc(100vh - 50px);
+  }
+  .connect .form {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+.connect .form label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  color: var(--C-black);
+}
+.connect .form .form-input:not(:placeholder-shown) ~ label {
+  display: none;
+}
+.connect button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: var(--C-blue);
+  color: white;
+  border: none;
+}
+.connect .social-media a {
+  font-size: 22px;
+  color: var(--C-blue);
+  margin-right: 20px;
+}
+/* End Connect Section*/
+/*_____________________________________________*/
+/* Start Animation*/
+.page-content.inactive {
+  display: none;
+  position: relative;
+  left: -100%;
+  animation: left 0.3s ease;
+}
+@keyframes left {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+.connect.show {
+  display: block;
+  transform: translateX(-100%);
+  z-index: -1;
+  animation: right 0.3s ease;
+}
+@keyframes right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* End Animation*/

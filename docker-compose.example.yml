@@ -1,0 +1,40 @@
+version: "3"
+networks:
+  celec-gonetwork-network:
+services:
+ mariadb:
+  container_name: gonetworkmariadb
+  tty: true
+  image: mariadb
+  ports: 
+   - "4306:3306"
+  networks:
+   - celec-gonetwork-network
+  volumes:
+   - ./maria:/var/lib/mysql
+  environment:
+   MYSQL_ROOT_PASSWORD: 
+   MYSQL_DATABASE: gonetwork
+   MYSQL_USER: 
+   MYSQL_PASSWORD: 
+ php:
+  container_name: php-gonetwork
+  build: ./php
+  ports:
+   - "9001:9001"
+  volumes:
+   - ./src/:/var/www/html/
+  networks:
+   - celec-gonetwork-network
+ web:
+  container_name: gonetworkweb
+  image: nginx
+  volumes:
+   - ./src/:/var/www/html/
+   - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+  networks:
+   - celec-gonetwork-network
+  ports:
+    - "81:80"
+  depends_on:
+    - php
