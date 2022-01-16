@@ -79,26 +79,6 @@
         </div>
         <div class="shadow"></div>
         <!--***************************************-->
-        <div class="comment">
-            <div class="container">
-                <form action="" id="comment-form"> 
-                    <div class="comment-info">
-                        <input
-                          type="text"
-                          id="comment"
-                          class="form-input left-border"
-                          placeholder=" "
-                          required
-                        />
-                        <label for="comment">LEAVE A COMMENT</label>
-                    </div>
-                    <button type="submit" 
-                  form="contact-form" 
-                  value="Submit">
-                    <a href="" mailto:>Send</a>
-                  </button>
-                </form>
-            </div>
-        </div>
+        <x-comment year="2017" />
     </div>
 @endsection

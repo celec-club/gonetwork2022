@@ -11,6 +11,10 @@ use Rappasoft\LaravelLivewireTables\Views\Column;
 
 class UserTable extends DataTableComponent {
 
+    protected string $pageName = 'users';
+    protected string $tableName = 'users';
+    protected $queryString = [];
+
     public array $bulkActions = [
         'exportSelected' => 'Export',
     ];

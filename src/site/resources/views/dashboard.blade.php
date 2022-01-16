@@ -10,8 +10,17 @@
 </head>
 <body>
 	<div class="container mt-3">
-		<div class="row">	
+		<div class="row">
+			<h1 class="mt-3">Users: </h1>
 			@livewire("user-table")
+			<hr/>
+			<br/>
+			<h1 class="mt-3">Messages: </h1>
+			@livewire("message-table")
+			<hr/>
+			<br/>
+			<h1 class="mt-3">Comments: </h1>
+			@livewire("comment-table")
 		</div>
 	</div>
 </body>

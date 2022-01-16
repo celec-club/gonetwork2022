@@ -26,6 +26,7 @@
   href="{{ url('images/Landing.svg') }}"
   />
   <title>CELEC - Go Network</title>
+  
 </head>
 <body>
   <header>
@@ -48,7 +49,9 @@
     </div>
   </header>
   @yield("content")
+
   <footer>
+    
     <div class="container">
       <div class="cisco-logo">
         <img src="{{url('images/go_network_logo_b.png')}}" alt="">
@@ -121,5 +124,6 @@
       connectPage.classList.add('show')
   </script>
 @endif
+@include('sweetalert::alert')
 </body>
 </html>

@@ -20,8 +20,6 @@ class UserController extends Controller {
             "specialty"     =>      "required",
             "matricule"     =>      "required|unique:users",
             "id_number"     =>      "required|unique:users,id_number",
-            "accepted"      =>      true,
-            "scanned_times" =>      0,
         ]);
     
         if ($validator->fails()) {
@@ -37,7 +35,9 @@ class UserController extends Controller {
             "matricule"         =>      $request->matricule,
             "id_number"         =>      $request->id_number,
             "is_usthb"          =>      ($request->has("is_student")) ? true : false,
-            "is_member"         =>      ($request->has("is_member")) ? true : false
+            "is_member"         =>      ($request->has("is_member")) ? true : false,
+            "accepted"      =>      true,
+            "scanned_times" =>      0,
         ]);
         $user->createCodeQr();
         Auth::login($user);
@@ -61,7 +61,7 @@ class UserController extends Controller {
     }
 
     public function show() {
-        Auth::user()->createCodeQr();
+        // Auth::user()->createCodeQr();
         return view("account", ["user" => Auth::user()]);
     }
     public function verify(Request $request, int $id) {

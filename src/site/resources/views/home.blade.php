@@ -276,50 +276,6 @@
         </div>
       </div>
     </div>
-    <div class="contact">
-      <div class="left-section-heading">
-        <img src="{{url('images/arrow.png')}}" alt="arrow" />
-        <h2>Contact Us</h2>
-      </div>
-      <div class="container">
-        <div class="text">
-          <h3>For more information, you can contact us</h3>
-        </div>
-        <div class="form">
-          <form action="" id="contact-form">
-            <div class="form">
-              <div class="contact-info">
-                <input
-                type="text"
-                id="contact-name"
-                class="form-input"
-                placeholder=" "
-                required
-                />
-                <label for="contact-name">Full Name</label>
-              </div>
-              <div class="contact-info">
-                <input
-                type="email"
-                id="contact-email"
-                class="form-input left-border"
-                placeholder=" "
-                required
-                />
-                <label for="contact-email">email</label>
-              </div>
-              <div class="contact-info">
-                <textarea name="message" id="message" class="message" placeholder=" "></textarea>
-                <label for="message">Message</label>
-              </div>
-              <button type="submit" 
-              form="contact-form" 
-              value="Submit">
-              <a href="" mailto:>Submit</a>
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
+    <x-contact/>
   </div>
 @endsection

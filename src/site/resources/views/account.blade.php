@@ -41,7 +41,7 @@
 			</div>
 				<div style="margin-top: 15%;">
 					<center>
-						<a href="{{ url("storage/qrs/5_qr.png") }}" download="{{ url("storage/qrs/5_qr.svg") }}"><img width="50%" src='{{ url("storage/qrs/5_qr.svg") }}'></a>
+						<a href="{{ url("storage/qrs/".$user->id."_qr.png") }}" download="{{ url("storage/qrs/".$user->id."_qr.png") }}"><img width="50%" src='{{ url("storage/qrs/".$user->id."_qr.png") }}'></a>
 					<br/>
 					<h3>
 						Il est obligatoir de ramener une copie de votre code QR.
