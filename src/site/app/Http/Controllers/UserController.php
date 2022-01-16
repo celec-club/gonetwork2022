@@ -65,6 +65,11 @@ class UserController extends Controller {
         return view("account", ["user" => Auth::user()]);
     }
     public function verify(Request $request, int $id) {
-        return (User::findOrFail($id)->accepted === true) ? response(null, 200) : response(null, 401);
+        $user = User::findOrFail($id);
+        if ($user->accepted) {
+            $user->increment("scanned_times");
+            return response(null, 200);
+        }
+        return response(null, 401);
     }
 }

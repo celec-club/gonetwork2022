@@ -25,7 +25,7 @@
 	<div class="container">
 		<div class="text">
 			<center>
-				<h1>VOS INFORMATION</h1>
+				<h1>YOUR INFORMATION</h1>
 			</center>
 			<div class="left">			
 				<ul>
@@ -44,8 +44,7 @@
 						<a href="{{ url("storage/qrs/".$user->id."_qr.png") }}" download="{{ url("storage/qrs/".$user->id."_qr.png") }}"><img width="50%" src='{{ url("storage/qrs/".$user->id."_qr.png") }}'></a>
 					<br/>
 					<h3>
-						Il est obligatoir de ramener une copie de votre code QR.
-						Cliquez sur l'image pour la télécharger
+						It is mandatory to bring back a copy of your QR code. Click on the image to download it
 					</h3>
 					</center>
 				</div>

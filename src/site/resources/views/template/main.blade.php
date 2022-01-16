@@ -57,9 +57,10 @@
         <img src="{{url('images/go_network_logo_b.png')}}" alt="">
       </div>
       <div class="social-media">
-        <a href="https://web.facebook.com/CELECUSTHB"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/celec_usthb/"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.linkedin.com/company/celecusthb/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/celecusthb/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://web.facebook.com/CELECUSTHB "><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/celec_usthb"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/CELEC-USTHB-CLUB/gonetwork2022"><i class="fab fa-github"></i></a>
       </div>
     </div>
   </footer>
