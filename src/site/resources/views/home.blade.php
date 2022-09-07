@@ -260,7 +260,7 @@
       <div class="container">
         <div class="odd-year">
           <div class="year">
-            <a href="{{url('archive/2017')}}" target="_blank"><img src="{{url('images/Archive-2017.png')}}" alt=""></a>
+            <a href="{{url('archive/2017')}}" target="_blank"><img src="{{url('images/Archive-2017.jpg')}}" alt=""></a>
             <span>2017</span>
           </div>
           <div class="year">
@@ -270,7 +270,7 @@
         </div>
         <div class="even-year">
           <div class="year">
-            <a href="{{url('archive/2019')}}" target="_blank"><img src="{{url('images/Archive-2019.png')}}" alt=""></a>
+            <a href="{{url('archive/2019')}}" target="_blank"><img src="{{url('images/Archive-2019.JPG')}}" alt=""></a>
             <span>2019</span>
           </div>
         </div>
