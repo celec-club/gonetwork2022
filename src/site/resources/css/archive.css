@@ -82,6 +82,7 @@ ul {
 /* End Component*/
 /*_____________________________________________*/
 /* Start Header*/
+/*
 header {
   position: relative;
   height: 70px;
@@ -173,7 +174,7 @@ header .language ul::before {
   border-width: 10px;
   border-style: solid;
   border-color: transparent transparent var(--C-black) transparent;
-}
+}*/
 /* End Header*/
 /*____________________________________________*/
 /*Start Landing*/
