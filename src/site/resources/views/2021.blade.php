@@ -42,15 +42,15 @@
             <div class="gallery">
               <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_1304.jpg" alt=""></span></div>
               <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_1336.jpg" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_1389.JPG" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_1389.jpg" alt=""></span></div>
               <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_0550.jpg" alt=""></span></div>
               <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_0555.jpg" alt=""></span></div>
               <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_0634.jpg" alt=""></span></div>
               <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_0672.jpg" alt=""></span></div>
               <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_0695.jpg" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_1135.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_1084.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_1085.JPG" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_1135.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_1084.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_1085.jpg" alt=""></span></div>
               <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_1089.jpg" alt=""></span></div>
               <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_1306.jpg" alt=""></span></div>
               <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2021/IMG_1307.jpg" alt=""></span></div>
