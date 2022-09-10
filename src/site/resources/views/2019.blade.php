@@ -41,33 +41,33 @@
             <div class="gallery">
               <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0068.jpg" alt=""></span></div>
               <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0072.jpg" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0105.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0106.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0108.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0109.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0117.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0118.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0119.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0120.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0124.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0125.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0127.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0128.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0129.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0130.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0131.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0132.JPG" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0105.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0106.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0108.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0109.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0117.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0118.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0119.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0120.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0124.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0125.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0127.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0128.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0129.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0130.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0131.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0132.jpg" alt=""></span></div>
               <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0241.jpg" alt=""></span></div>
               <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0071.jpg" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0104.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0107.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0110.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0111.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0112.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0114.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0115.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0116.JPG" alt=""></span></div>
-              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0126.JPG" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0104.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0107.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0110.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0111.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0112.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0114.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0115.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0116.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://raw.githubusercontent.com/Zakaria-Bli/Go-Network-Event-/master/Archive/Image/2019/IMG_0126.jpg" alt=""></span></div>
             </div>
           </div>
         </div>
