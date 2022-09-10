@@ -176,7 +176,7 @@
                 </label>
                 <label class="radio-label" for="student-false">
                   <input
-                  name="is_not_student"
+                  name="is_student"
                   type="radio"
                   id="student-false"
                   value="no"
@@ -201,7 +201,7 @@
                 </label>
                 <label class="radio-label" for="membre-false">
                   <input
-                  name="is_not_member"
+                  name="is_member"
                   type="radio"
                   id="membre-false"
                   value="no"
