@@ -56,4 +56,8 @@ class UserTable extends DataTableComponent {
         return User::findOrFail($userId)->update(["accepted" => true]);
     }
 
+    public function delete(int $userId) {
+        return User::findOrFail($userId)->delete();
+    }
+
 }

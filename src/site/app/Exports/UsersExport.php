@@ -13,7 +13,7 @@ class UsersExport implements FromCollection, WithMapping, WithHeadings {
     * @return \Illuminate\Support\Collection
     */
     public function collection() {
-        return User::all();
+        return User::where('accepted', true)->get();
     }
 
     public function headings(): array {

@@ -49,4 +49,5 @@
 </x-livewire-tables::table.cell>
 <x-livewire-tables::table.cell>
     {{$row->created_at}}
+    <button class="btn btn-outline-danger" wire:click="delete({{$row->id}})">Delete</button>
 </x-livewire-tables::table.cell>
