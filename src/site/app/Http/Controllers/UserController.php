@@ -18,7 +18,7 @@ class UserController extends Controller {
             "phone_number"  =>      "required|unique:users,phone",
             "level"         =>      "required",
             "specialty"     =>      "required",
-            "matricule"     =>      "required|unique:users",
+            "matricule"     =>      "unique:users",
             "id_number"     =>      "required|unique:users,id_number",
         ]);
     

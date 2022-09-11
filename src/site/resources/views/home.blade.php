@@ -24,7 +24,7 @@
     </div>
     <div class="former" id="former">
       <div class="right-section-heading">
-        <h2>Former</h2>
+        <h2>Trainer</h2>
         <img src="{{url('images/arrow.png')}}" alt="arrow" />
       </div>
       <div class="container">
@@ -122,6 +122,7 @@
                 <option value="M1">Master 1</option>
                 <option value="M2">Master 2</option>
                 <option value="Doctorat">Doctoral Student</option>
+                <option value="other">Other</option>
               </select>
             </div>
             <div class="input-info">
@@ -144,7 +145,6 @@
               id="matricule"
               class="form-input left-border"
               placeholder=" "
-              required
               />
               <label for="matricule">Marticule</label>
             </div>
@@ -219,7 +219,7 @@
           </div>
         </form>
         <div class="certificate">
-          <h3>Certificate Form</h3>
+          <h3>Certificate example</h3>
           <form action="{{ url('cert/create') }}" method="POST" id="certificat-form">
           	@csrf
             <div class="certificate-input">
@@ -235,7 +235,7 @@
               >
             </div>
             <button type="submit" form="certificat-form" value="Submit">
-              certificate example
+              generate certificate example
             </button>
           </form>
           <div class="remarque">
