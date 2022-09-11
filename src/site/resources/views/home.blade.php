@@ -154,7 +154,7 @@
               type="number"
               id="id-number"
               class="form-input left-border"
-              placeholder="ID Number (identity card)"
+              placeholder=" "
               required
               />
               <label for="id-number">ID Number (identity card)</label>
