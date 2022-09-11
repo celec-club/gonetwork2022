@@ -154,10 +154,10 @@
               type="number"
               id="id-number"
               class="form-input left-border"
-              placeholder=" "
+              placeholder="ID Number (identity card)"
               required
               />
-              <label for="id-number">ID Number</label>
+              <label for="id-number">ID Number (identity card)</label>
             </div>
           </div>
           <div class="radio-form">
