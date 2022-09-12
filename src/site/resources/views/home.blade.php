@@ -12,7 +12,7 @@
             For this purpose, this year's edition will address the theme of cyber security 
             which is a very wide field of information and knowledge,
             making it eagerly awaited by students.
-            A new edition animated by the famous doctor Abderrazak Bachir BOUIDJRA.
+            A new edition animated by the famous doctor Abderrazak BACHIR BOUIADJRA.
             This training will take place in 3 days and will be divided into 3 main 
             aspects of security, namely networks, development and hacking systems.
           </p>
