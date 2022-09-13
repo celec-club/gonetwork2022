@@ -38,6 +38,7 @@
           "Djilali Liabes" of Sidi Bel Abbes, and at the same time, a network auditor and Cisco 
           instructor at the private vocational training institution "ICT TOWERS" present in 
           Sidi Bel Abbes and recently in Algiers.
+          <br>
           Dr. BACHIR BOUIADJRA has been honored with an arsenal of high-level certifications from 
           various organizations including ISO, ISACA, EC-Council, Blockchain Council, Cisco, Juniper,
           Huawei and IPv6 Forum. 
