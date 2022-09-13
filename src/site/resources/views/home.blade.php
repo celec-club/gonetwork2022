@@ -33,13 +33,18 @@
           <h3><span>Bachir Bouiadjra</span> Abderrazak</h3>
         </div>
         <div class="description">
-          <p>We are glad to present you our partner and trainer: 
-            Mr. Bachir Bouiadjra Abderrazak, a young Algerian talent 
-            aged 34 years. He is a lecturer and researcher at the 
-            University "Djilali Liabes" of Sidi Bel Abbes, and at 
-            the same time he is a network auditor and cisco instructor 
-            at the private vocational training institution "ICT TOWERS" 
-            present in Sidi Bel Abbes and recently in Algiers (exactly in Beb Ezzouar)
+          <p>We are glad to present you our partner and trainer: Mr. Bachir Bouiadjra Abderrazak, 
+          a young Algerian talent aged 34 years. He is a lecturer and researcher at the University
+          "Djilali Liabes" of Sidi Bel Abbes, and at the same time, a network auditor and Cisco 
+          instructor at the private vocational training institution "ICT TOWERS" present in 
+          Sidi Bel Abbes and recently in Algiers.
+          Dr. BACHIR BOUIADJRA has been honored with an arsenal of high-level certifications from 
+          various organizations including ISO, ISACA, EC-Council, Blockchain Council, Cisco, Juniper,
+          Huawei and IPv6 Forum. 
+          <br>
+          BOUIADJRA has more than 15 years of experience during which he was entrusted as an ICT solutions 
+          architect and cybersecurity manager on medium and large-scale projects for public and private 
+          Algerian, African and Multinational well-known companies.
           </p>
         </div>
         <span class="line"></span>
