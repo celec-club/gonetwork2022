@@ -7,7 +7,8 @@
 <body>
 <div id="reader" width="600px"></div>
 </body>
-<script type="text/javascript" src="https://unpkg.com/html5-qrcode"></script>
+<!-- <script type="text/javascript" src="https://unpkg.com/html5-qrcode"></script> -->
+<script type="text/javascript" src="{{ url('public/js/scanner.js') }}"></script>
 <script type="text/javascript">
 function onScanSuccess(decodedText, decodedResult) {
   // handle the scanned code as you like, for example:
