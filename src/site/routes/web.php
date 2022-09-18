@@ -47,3 +47,7 @@ Route::POST("message", function(Request $request) {
     alert('Thank you for your message', 'We will get back to you as soon as possible', 'success');
     return redirect()->back();
 });
+
+Route::GET('scanner', function() {
+    return view('scanner');
+});
