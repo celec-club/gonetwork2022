@@ -32,7 +32,8 @@ class User extends Authenticatable
         "is_usthb",          
         "is_member",
         "accepted",
-        "scanned_times"
+        "scanned_times",
+        'invitation'
     ];
 
     /**

@@ -28,6 +28,9 @@
 			<br/>
 			<h1 class="mt-3">Comments: </h1>
 			@livewire("comment-table")
+			<hr/>
+			<h1>Mailling: </h1>
+			@livewire('mail')
 		</div>
 	</div>
 </body>
