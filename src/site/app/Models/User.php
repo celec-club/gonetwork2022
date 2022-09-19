@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Link;
 use App\Models\Qr;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -57,6 +58,11 @@ class User extends Authenticatable
         "accepted" => "boolean"
     ];
 
+
+    public function link() 
+    {
+        return $this->hasOne(Link::class);
+    }
 
     public function qr() {
         return $this->hasOne(Qr::class);
