@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Concerns\ToCollection;
 use Maatwebsite\Excel\Concerns\ToModel;
+use Carbon\Carbon;
 
 class UsersImport implements ToCollection
 {
@@ -21,7 +22,7 @@ class UsersImport implements ToCollection
                 $uuid = (string) Str::uuid();
                 $user = User::where('email', $row[1])->first();
                 if ($user !== null) {
-                    array_push($linksToInsert, ['user_id' => $user->id, 'token' => $uuid, 'sended' => false]);
+                    array_push($linksToInsert, ['user_id' => $user->id, 'token' => $uuid, 'sended' => false, 'created_at' => Carbon::now()]);
                 }
             }
         }
