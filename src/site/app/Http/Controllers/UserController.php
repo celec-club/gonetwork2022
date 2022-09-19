@@ -21,7 +21,7 @@ class UserController extends Controller {
             // "matricule"     =>      "unique:users",
             "id_number"     =>      "required|unique:users,id_number",
         ]);
-    
+        
         if ($validator->fails()) {
             return redirect('/#register')->withErrors($validator)->withInput();
         }
