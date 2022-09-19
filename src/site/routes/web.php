@@ -53,7 +53,11 @@ Route::POST("message", function(Request $request) {
 Route::GET('acceptInvitation', function(Request $request) {
     $user = User::findOrFail(Link::where('token', $request->query('token'))->firstOrFail()->user_id);
     $user->update(['invitation' => true]);
-    alert('Thank you for your feedback', 'we appreciate that', 'success');
+    alert('Congratulations !', 'Votre place a été réservée avec succès 🤩
+Nous vous informons que votre présence est strictement obligatoire en vue des places qui seront limitées.
+Hâte de vous avoir parmi nous !
+Cordialement,
+Team celec.', 'success');
     return view('home');
 });
 

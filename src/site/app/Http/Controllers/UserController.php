@@ -65,7 +65,7 @@ class UserController extends Controller {
         return view("account", ["user" => Auth::user()]);
     }
     public function verify(Request $request, int $id) {
-        $user = User::findOrFail($id);
+        $user = User::where('invitation', true)->findOrFail($id);
         if ($user->accepted) {
             $user->increment("scanned_times");
             return response(null, 200);

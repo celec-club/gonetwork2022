@@ -18,10 +18,13 @@ class UsersImport implements ToCollection
         foreach($rows as $key => $row) {
             if ($key > 0) {
                 $uuid = (string) Str::uuid();
-                if (Link::where('user_id', $row[0])->get()->isEmpty()) {
-                    Link::create(['user_id' => $row[0], 'token' => $uuid]);
-                    $url = url('/acceptInvitation?token='.$uuid);
-                    Mail::to($row[2])->send(new ActivationLink($url));
+                $user = User::where('email', $row[1])->first();
+                if ($user !== null) {
+                    if (Link::where('user_id', $user->id)->get()->isEmpty()) {
+                        $url = url('/acceptInvitation?token='.$uuid);
+                        Mail::to($row[1])->send(new ActivationLink($url));
+                        Link::create(['user_id' => $user->id, 'token' => $uuid]);
+                    }
                 }
             }
         }

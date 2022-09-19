@@ -24,6 +24,8 @@
 		Nous nous réjouissons de vous accueillir !<br>
 		Nos meilleures salutations,<br>
 		CELEC<br>
+		<br/>
+		Invitation: <a href="https://drive.google.com/file/d/130yCfnualnzMNNV8yTnOflUgzvrphBvS/view?usp=sharing">https://drive.google.com/file/d/130yCfnualnzMNNV8yTnOflUgzvrphBvS/view?usp=sharing</a>
 	</p>
 </body>
 </html>
