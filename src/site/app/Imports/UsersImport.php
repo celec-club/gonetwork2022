@@ -21,7 +21,7 @@ class UsersImport implements ToCollection
                 $uuid = (string) Str::uuid();
                 $user = User::where('email', $row[1])->first();
                 if ($user !== null) {
-                    array_push($linksToInsert, ['user_id' => 1, 'token' => $uuid, 'sended' => false]);
+                    array_push($linksToInsert, ['user_id' => $user->id, 'token' => $uuid, 'sended' => false]);
                 }
             }
         }
