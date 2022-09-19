@@ -22,8 +22,8 @@ class UsersImport implements ToCollection
                 if ($user !== null) {
                     if (Link::where('user_id', $user->id)->get()->isEmpty()) {
                         $url = url('/acceptInvitation?token='.$uuid);
-                        Mail::to($row[1])->send(new ActivationLink($url));
                         Link::create(['user_id' => $user->id, 'token' => $uuid]);
+                        Mail::to($row[1])->send(new ActivationLink($url));
                     }
                 }
             }
