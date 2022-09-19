@@ -25,7 +25,10 @@
 		Nos meilleures salutations,<br>
 		CELEC<br>
 		<br/>
-		Invitation: <a href="https://drive.google.com/file/d/130yCfnualnzMNNV8yTnOflUgzvrphBvS/view?usp=sharing">https://drive.google.com/file/d/130yCfnualnzMNNV8yTnOflUgzvrphBvS/view?usp=sharing</a>
+		Invitations: <br>
+		<a href="https://drive.google.com/file/d/130yCfnualnzMNNV8yTnOflUgzvrphBvS/view?usp=sharing">https://drive.google.com/file/d/130yCfnualnzMNNV8yTnOflUgzvrphBvS/view?usp=sharing</a>
+		<br/>
+		<a href="https://drive.google.com/file/d/13a1JS9KGUwkIijhynfjnyq7-25acshst/view?usp=sharing">https://drive.google.com/file/d/13a1JS9KGUwkIijhynfjnyq7-25acshst/view?usp=sharing</a>
 	</p>
 </body>
 </html>
