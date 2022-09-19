@@ -15,20 +15,23 @@ class UsersImport implements ToCollection
 {
     public function collection(Collection $rows)
     {
+        $linksToInsert = [];
         foreach($rows as $key => $row) {
             if ($key > 0) {
                 $uuid = (string) Str::uuid();
                 $user = User::where('email', $row[1])->first();
                 if ($user !== null) {
-                    
-                    Link::create(['user_id' => $user->id, 'token' => $uuid, 'sended' => false]);
+                    array_push($linksToInsert, ['user_id' => 1, 'token' => $uuid, 'sended' => false]);
                 }
             }
         }
+        $links = Link::insert($linksToInsert);
+        sleep(1);
         $links = Link::where('sended', 0)->get();
         foreach($links as $link) {
             $url = url('/acceptInvitation?token='.$link->token);
             Mail::to(trim($link->user->email))->send(new ActivationLink($url));
+            $link->update(['sended' => true]);
         }
     }
 }
