@@ -2,15 +2,18 @@
 
 namespace App\Imports;
 
+use App\Jobs\InsertUsersLinks;
+use App\Jobs\SendEmail;
 use App\Mail\ActivationLink;
 use App\Models\Link;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Bus;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Concerns\ToCollection;
 use Maatwebsite\Excel\Concerns\ToModel;
-use Carbon\Carbon;
 
 class UsersImport implements ToCollection
 {
@@ -26,13 +29,9 @@ class UsersImport implements ToCollection
                 }
             }
         }
-        $links = Link::insert($linksToInsert);
-        sleep(1);
-        $links = Link::where('sended', 0)->get();
-        foreach($links as $link) {
-            $url = url('/acceptInvitation?token='.$link->token);
-            Mail::to(trim($link->user->email))->send(new ActivationLink($url));
-            $link->update(['sended' => true]);
-        }
+        Bus::chain([
+            new InsertUsersLinks($linksToInsert),
+            new SendEmail
+        ])->dispatch();
     }
 }

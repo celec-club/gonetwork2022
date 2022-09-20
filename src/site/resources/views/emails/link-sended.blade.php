@@ -28,7 +28,8 @@
 		Invitations: <br>
 		<a href="https://drive.google.com/file/d/130yCfnualnzMNNV8yTnOflUgzvrphBvS/view?usp=sharing">https://drive.google.com/file/d/130yCfnualnzMNNV8yTnOflUgzvrphBvS/view?usp=sharing</a>
 		<br/>
-		<a href="https://drive.google.com/file/d/13a1JS9KGUwkIijhynfjnyq7-25acshst/view?usp=sharing">https://drive.google.com/file/d/13a1JS9KGUwkIijhynfjnyq7-25acshst/view?usp=sharing</a>
+		<a href="https://drive.google.com/file/d/13a1JS9KGUwkIijhynfjnyq7-25acshst/view?usp=sharing">https://drive.google.com/file/d/13a1JS9KGUwkIijhynfjnyq7-25acshst/view?usp=sharing</a><br/>
+		Event schedule: <br/><a href="https://drive.google.com/file/d/1MYtJvqi3fIZKKNdG_MuhaQ840XehaijM/view?usp=sharing">https://drive.google.com/file/d/1MYtJvqi3fIZKKNdG_MuhaQ840XehaijM/view?usp=sharing</a>
 	</p>
 </body>
 </html>
