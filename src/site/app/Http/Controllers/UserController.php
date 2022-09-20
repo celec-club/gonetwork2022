@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Validator;
 class UserController extends Controller {
     
     public function create(Request $request) {
+        alert('Error', 'Oups, registrations are closed', 'error');
+        return redirect()->back();
         $validator = Validator::make($request->all(), [
             "fullname"      =>      "required",
             "email"         =>      "required|unique:users",

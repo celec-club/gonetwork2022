@@ -66,6 +66,9 @@
             </ul>
           </div>
         @endif
+        <div style="padding: 1%; background: #fab6b6; width: 40%; text-align: initial; font-weight: bolder; border-radius: 5px;">
+            <b>Registrations are closed</b>
+        </div>
       </center>
       <div class="container">
         <form action="{{ url('users/create') }}" method="POST" id="inscription-form">
