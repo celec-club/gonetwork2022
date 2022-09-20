@@ -23,7 +23,7 @@ class UsersImport implements ToCollection
         foreach($rows as $key => $row) {
             if ($key > 0) {
                 $uuid = (string) Str::uuid();
-                $user = User::where('email', $row[1])->first();
+                $user = User::where('email', trim($row[1]))->first();
                 if ($user !== null) {
                     array_push($linksToInsert, ['user_id' => $user->id, 'token' => $uuid, 'sended' => false, 'created_at' => Carbon::now()]);
                 }
