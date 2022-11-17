@@ -24,11 +24,11 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot(Charts $charts)
+    public function boot()
     {
-        $charts->register([
-            UsersUsthbChart::class,
-            UsersCelecChart::class
-        ]);
+        // $charts->register([
+        //     UsersUsthbChart::class,
+        //     UsersCelecChart::class
+        // ]);
     }
 }
