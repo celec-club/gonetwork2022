@@ -38,7 +38,6 @@
         <ul>
           <li><a href="@if(Request::is('/')) #former @else {{url('/#former')}} @endif">Trainer</a></li>
           <li><a href="@if(Request::is('/')) #register @else {{url('/#register')}} @endif">Register</a></li>
-          <li><a href="@if(Request::is('/')) #archive @else {{url('/#archive')}} @endif">Archive</a></li>
           @if(!Auth::check())
             <li><a href="#connection">Sign In</a></li>
           @else
