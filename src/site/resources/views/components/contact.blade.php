@@ -37,7 +37,7 @@
             <textarea name="message" id="message" class="message" placeholder=" "></textarea>
             <label for="message">Message</label>
         </div>
-        <button type="submit" style="cursor: pointer; color: white;"  onclick="document.getElementById('comment-form').submit();"
+        <button type="submit" style="cursor: pointer; color: white; background-color: #E94934 !important;"  onclick="document.getElementById('comment-form').submit();"
         form="contact-form" 
         value="Submit">
         Submit

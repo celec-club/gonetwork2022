@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 :root {
-  --C-cyan: #00c4f2;
+  --C-cyan: #E94934;
   --C-black: #252a3a;
   --C-blue: #3f3d56;
   --C-light-gray: #f2f2f2;
@@ -208,6 +208,7 @@ header .language ul::before {
 .landing {
   position: relative;
   z-index: -1;
+  
 }
 .landing .container {
   min-height: calc(100vh - 70px);

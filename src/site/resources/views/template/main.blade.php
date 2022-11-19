@@ -23,7 +23,7 @@
   rel="icon"
   type="image/svg"
   sizes="32x32"
-  href="{{ url('images/Landing.svg') }}"
+  href="{{ url('images/Celec_Logo_Blue.svg') }}"
   />
   <title>CELEC - Go Network</title>
   
@@ -52,9 +52,6 @@
   <footer>
     
     <div class="container">
-      <div class="cisco-logo">
-        <img src="{{url('images/go_network_logo_b.png')}}" alt="">
-      </div>
       <div class="social-media">
         <a href="https://www.linkedin.com/company/celecusthb/"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://web.facebook.com/CELECUSTHB "><i class="fab fa-facebook"></i></a>
@@ -106,7 +103,7 @@
           </div>
         </div>
         <div class="submit-btn">
-          <button type="submit" form="connect-form" value="Submit">
+          <button type="submit" form="connect-form" value="Submit" >
             Sign In
           </button>
         </div>

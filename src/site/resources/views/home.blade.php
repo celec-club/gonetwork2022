@@ -4,7 +4,7 @@
     <div class="landing">
       <div class="container">
         <div class="text">
-          <h1><span>CELEC</span> Go Network</h1>
+          <h1><span>HUAWEI</span> Go Network</h1>
           <p>
             This first event, in collaboration with Huawei, will include conferences given by competent engineers.
 During this event, we will discuss the latest technologies in the field of communication and wireless networks.
@@ -59,9 +59,6 @@ You will discover Wi-Fi 6 and its advantages, as well as the fifth generation ne
             </ul>
           </div>
         @endif
-        <div style="padding: 1%; background: #fab6b6; width: 40%; text-align: initial; font-weight: bolder; border-radius: 5px;">
-            <b>Registrations are closed</b>
-        </div>
       </center>
       <div class="container">
         <form action="{{ url('users/create') }}" method="POST" id="inscription-form">
@@ -193,7 +190,7 @@ You will discover Wi-Fi 6 and its advantages, as well as the fifth generation ne
             </div>
           </div>
           <div class="submit-btn">
-            <button type="submit" form="inscription-form" value="Submit">
+            <button style="background-color: #E94934 !important;" type="submit" form="inscription-form" value="Submit">
               Submit
             </button>
           </div>
