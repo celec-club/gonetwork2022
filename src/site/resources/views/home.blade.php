@@ -6,47 +6,40 @@
         <div class="text">
           <h1><span>CELEC</span> Go Network</h1>
           <p>
-            For several years, after 4 previous editions, 
-            the famous Cisco training has become a tradition within the CELEC club, 
-            reaching an average of 1200 participants from all regions of Algeria.
-            For this purpose, this year's edition will address the theme of cyber security 
-            which is a very wide field of information and knowledge,
-            making it eagerly awaited by students.
-            A new edition animated by the famous doctor Abderrazak BACHIR BOUIADJRA.
-            This training will take place in 3 days and will be divided into 3 main 
-            aspects of security, namely networks, development and hacking systems.
+            This first event, in collaboration with Huawei, will include conferences given by competent engineers.
+During this event, we will discuss the latest technologies in the field of communication and wireless networks.
+You will discover Wi-Fi 6 and its advantages, as well as the fifth generation network and also radio optimization which consists in guaranteeing an optimal quality of service.
           </p>
         </div>
         <div class="image">
-          <img src="{{url('images/Landing.svg')}}" alt="" />
+          <img src="{{url('images/Huawei_Logo.png')}}" alt="" />
         </div>
       </div>
     </div>
     <div class="former" id="former">
       <div class="right-section-heading">
-        <h2>Trainer</h2>
+        <h2>Presented By</h2>
         <img src="{{url('images/arrow.png')}}" alt="arrow" />
       </div>
       <div class="container">
         <div class="info">
-          <img src="{{url('images/Formateur.png')}}" alt="Former img" />
-          <h3><span>Bachir Bouiadjra</span> Abderrazak</h3>
+        <div class="image">
+          <img src="{{url('images/ICT logo.png')}}" alt="Former img" />
+          </div>
+          <h3><span>Huawei</span> ICT Academy</h3>
         </div>
         <div class="description">
-          <p>We are glad to present you our partner and trainer: Mr. Bachir Bouiadjra Abderrazak, 
-          a young Algerian talent aged 34 years. He is a lecturer and researcher at the University
-          "Djilali Liabes" of Sidi Bel Abbes, and at the same time, a network auditor and Cisco 
-          instructor at the private vocational training institution "ICT TOWERS" present in 
-          Sidi Bel Abbes and recently in Algiers.
-          <br>
-          Dr. BACHIR BOUIADJRA has been honored with an arsenal of high-level certifications from 
-          various organizations including ISO, ISACA, EC-Council, Blockchain Council, Cisco, Juniper,
-          Huawei and IPv6 Forum. 
-          <br>
-          BOUIADJRA has more than 15 years of experience during which he was entrusted as an ICT solutions 
-          architect and cybersecurity manager on medium and large-scale projects for public and private 
-          Algerian, African and Multinational well-known companies.
+          <p>How to be a student in Huawei ICT Academy ?
+            Scan the Qr code
+            Visit the E talent platform 
+            Create a Huawei account 
+            Associate with an academy
+            View approval process
+            Following online and offline classes.
           </p>
+          <div style="text-align: center; margin-top: 25px;">
+            <img src="{{url('images/Qr code.png')}}" alt="Qr Code" />
+          </div>
         </div>
         <span class="line"></span>
       </div>
@@ -146,29 +139,7 @@
               <label for="specialty-input"> Specialty </label>
             </div>
           </div>
-          <div class="form">
-            <div class="input-info">
-              <input
-              name="matricule"
-              type="number"
-              id="matricule"
-              class="form-input left-border"
-              placeholder=" "
-              />
-              <label for="matricule">Marticule</label>
-            </div>
-            <div class="input-info">
-              <input
-              name="id_number"
-              type="number"
-              id="id-number"
-              class="form-input left-border"
-              placeholder=" "
-              required
-              />
-              <label for="id-number">ID Number (identity card)</label>
-            </div>
-          </div>
+ 
           <div class="radio-form">
             <div class="radio">
               <h3>Are you a student of the USTHB !</h3>
@@ -227,64 +198,10 @@
             </button>
           </div>
         </form>
-        <div class="certificate">
-          <h3>Certificate example</h3>
-          <form action="{{ url('cert/create') }}" method="POST" id="certificat-form">
-          	@csrf
-            <div class="certificate-input">
-              <input
-              type="text"
-              name="fullname"
-              id="certificate-full-name"
-              placeholder=" "
-              required
-              />
-              <label for="certificate-full-name"
-              >Write your first and last name</label
-              >
-            </div>
-            <button type="submit" form="certificat-form" value="Submit">
-              generate certificate example
-            </button>
-          </form>
-          <div class="remarque">
-            <h4>Note: <span>*</span></h4>
-            <p id="first-note">The first name must be fully capitalized</p>
-            <p id="second-note">
-              First letter of the last name in upper case and the rest in lower case
-            </p>
-          </div>
-        </div>
+        
       </div>
     </div>
-    <div class="archive" id="archive">
-      <div class="right-section-heading">
-        <h2>Archive</h2>
-        <img src="{{url('images/arrow.png')}}" alt="arrow" />
-      </div>
-      <div class="go-network-logo">
-        <img src="{{url('images/go_network_logo_b.png')}}" 
-        alt="Go Network Logo">
-      </div>
-      <div class="container">
-        <div class="odd-year">
-          <div class="year">
-            <a href="{{url('archive/2017')}}" target="_blank"><img src="{{url('images/2017.png')}}" alt=""></a>
-            <span>2017</span>
-          </div>
-          <div class="year">
-            <a href="{{url('archive/2021')}}" target="_blank"><img src="{{url('images/Archive-2021.png')}}" alt=""></a>
-            <span>2021</span>
-          </div>
-        </div>
-        <div class="even-year">
-          <div class="year">
-            <a href="{{url('archive/2019')}}" target="_blank"><img src="{{url('images/2019.png')}}" alt=""></a>
-            <span>2019</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     <x-contact/>
   </div>
 @endsection
