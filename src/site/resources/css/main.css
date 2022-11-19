@@ -7,8 +7,8 @@
 :root {
   --C-cyan: #00c4f2;
   --C-black: #252a3a;
-  --C-blue: #3f3d56;
-  --C-light-gray: #f2f2f2;
+  --C-light-gray: #efefef;
+  --C-red: #e51c28;
   --main-transition: 0.3s;
   --section-margin: 80px;
 }
@@ -145,7 +145,7 @@ header nav li a::before {
   position: absolute;
   height: 2px;
   width: 100%;
-  background-color: var(--C-cyan);
+  background-color: var(--C-red);
   bottom: 0;
   left: -100%;
   transition: var(--main-transition);
@@ -204,9 +204,13 @@ header .language ul::before {
 }
 /* End Header*/
 /*_____________________________________________*/
+
 /*Start Landing*/
 .landing {
   position: relative;
+  background-image: url("../Image/Landing.png");
+  background-repeat: none;
+  background-size: cover;
   z-index: -1;
 }
 .landing .container {
@@ -226,7 +230,7 @@ header .language ul::before {
   }
 }
 .landing .text {
-  max-width: 650px;
+  max-width: 500px;
 }
 .landing .text h1 {
   color: var(--C-black);
@@ -235,7 +239,7 @@ header .language ul::before {
   margin: 0;
 }
 .landing .text h1 span {
-  color: var(--C-cyan);
+  color: var(--C-red);
 }
 .landing .text p {
   /* max-width: 400px; */
@@ -244,8 +248,21 @@ header .language ul::before {
   line-height: 2;
   margin: 0;
 }
-.landing .image img {
+.landing .image {
   width: 380px;
+  height: 380px;
+  border-top: 3px solid #c1c1c1;
+  border-left: 3px solid #c1c1c1;
+  border-right: 3px solid #c1c1c1;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing .image img {
+  width: 250px;
+  transform: translateY(-15px);
 }
 @media (max-width: 991px) {
   .landing .text h1 {
@@ -256,8 +273,12 @@ header .language ul::before {
     max-width: 400px;
     margin: auto;
   }
+  .landing .image {
+    width: 320px;
+    height: 320px;
+  }
   .landing .image img {
-    width: 280px;
+    width: 220px;
   }
 }
 @media (max-width: 767px) {
@@ -282,7 +303,22 @@ header .language ul::before {
   position: relative;
 }
 .former .info {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.former .info .image {
+  width: 340px;
+  height: 340px;
+  border-top: 3px solid #c1c1c1;
+  border-left: 3px solid #c1c1c1;
+  border-right: 3px solid #c1c1c1;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .former .info img {
   width: 300px;
@@ -293,13 +329,13 @@ header .language ul::before {
   }
 }
 .former .info h3 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--C-black);
 }
 .former .info h3 span {
-  color: var(--C-cyan);
+  color: var(--C-red);
 }
 .former .description p {
   font-size: 18px;
@@ -313,7 +349,7 @@ header .language ul::before {
   position: absolute;
   height: 100%;
   width: 3px;
-  background-color: var(--C-cyan);
+  background-color: var(--C-red);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -364,10 +400,10 @@ header .language ul::before {
   background-color: #f2f2f2;
   outline: none;
   border: 3px solid;
-  border-color: transparent var(--C-cyan) var(--C-cyan) transparent;
+  border-color: transparent var(--C-red) var(--C-red) transparent;
 }
 .inscription .form .left-border {
-  border-color: transparent transparent var(--C-cyan) var(--C-cyan);
+  border-color: transparent transparent var(--C-red) var(--C-red);
 }
 .inscription .form #level {
   -webkit-appearance: none;
@@ -412,7 +448,7 @@ header .language ul::before {
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 2px solid #cdcbcb;
+  border: 2px solid var(--C-red);
   border-radius: 50%;
   position: absolute;
   left: 0;
@@ -421,7 +457,7 @@ header .language ul::before {
   content: " ";
   width: 10px;
   height: 10px;
-  background-color: var(--C-cyan);
+  background-color: var(--C-black);
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -441,199 +477,22 @@ header .language ul::before {
   text-align: center;
   margin-top: 20px;
 }
-.inscription form .submit-btn button,
-.certificate form button {
-  padding: 10px 20px;
+.inscription form .submit-btn button {
+  padding: 10px 30px;
   font-size: 18px;
   text-transform: uppercase;
-  background-color: var(--C-blue);
+  background-color: var(--C-black);
   color: white;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 @media (max-width: 991px) {
   .inscription form .submit-btn button {
     padding: 8px 20px;
     font-size: 14px;
   }
-  .certificate form button {
-    font-size: 14px;
-    padding: 12px 12px;
-    width: 200px;
-    margin: 0 auto;
-  }
-}
-.inscription .certificate {
-  padding: 0 80px;
-}
-@media (max-width: 991px) {
-  .inscription .certificate {
-    padding: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .inscription .certificate form {
-    flex-direction: column;
-    justify-content: center;
-    row-gap: 20px;
-  }
-}
-.inscription .certificate form {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.inscription .certificate h3 {
-  font-size: 20px;
-  text-transform: uppercase;
-  color: var(--C-black);
-}
-.certificate form .certificate-input {
-  position: relative;
-}
-.certificate form .certificate-input input {
-  height: 40px;
-  width: 300px;
-  background-color: #f2f2f2;
-  outline: none;
-  border: 3px solid var(--C-cyan);
-}
-.certificate form label {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  text-transform: uppercase;
-  color: var(--C-black);
-}
-.certificate .certificate-input input:not(:placeholder-shown) ~ label {
-  display: none;
-}
-.certificate .remarque {
-  max-width: 280px;
-}
-.certificate .remarque h4 {
-  color: var(--C-black);
-}
-.certificate .remarque h4 span {
-  color: red;
 }
 /* End Inscription Section */
-/*_____________________________________________*/
-/* Start Archive Section*/
-.archive {
-  position: relative;
-  margin-top: var(--section-margin);
-  margin-bottom: var(--section-margin);
-}
-.archive .go-network-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 767px) {
-  .archive .go-network-logo img {
-    width: 300px;
-  }
-}
-.archive .container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 80px;
-  width: 80%;
-  padding: 80px 0;
-}
-.archive .container::before {
-  content: " ";
-  width: 90%;
-  height: 3px;
-  background-color: var(--C-cyan);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.archive .odd-year {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.archive .even-year {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.archive .year {
-  position: relative;
-  height: 120px;
-  width: 120px;
-  background-color: white;
-  border-radius: 50%;
-  border-top: 4px solid;
-  border-left: 2px solid;
-  border-right: 2px solid;
-  border-color: #bababa #bababa transparent #bababa;
-}
-.archive .year span {
-  color: var(--C-black);
-  font-size: 18px;
-  font-weight: bold;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.archive .odd-year .year span {
-  top: 150%;
-}
-.archive .even-year .year span {
-  bottom: 150%;
-}
-.archive .year::before {
-  content: "";
-  height: 41px;
-  width: 2px;
-  background-color: var(--C-cyan);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.archive .odd-year .year::before {
-  top: 100%;
-}
-.archive .even-year .year::before {
-  bottom: 100%;
-}
-.archive .year img {
-  width: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-@media (max-width: 767px) {
-  .archive .year span {
-    font-size: 14px;
-  }
-  .archive .odd-year .year span {
-    top: 160%;
-  }
-  .archive .even-year .year span {
-    bottom: 160%;
-  }
-  .archive .year {
-    height: 80px;
-    width: 80px;
-  }
-  .archive .year img {
-    width: 60px;
-  }
-}
-/* End Archive Section*/
 /*_____________________________________________*/
 /* Start contact Section*/
 .contact {
@@ -649,7 +508,7 @@ header .language ul::before {
   column-gap: 200px;
 }
 .contact .text h3 {
-  color: var(--C-blue);
+  color: var(--C-black);
   font-size: 30px;
   max-width: 350px;
 }
@@ -670,10 +529,10 @@ header .language ul::before {
   background-color: #f2f2f2;
   outline: none;
   border: 3px solid;
-  border-color: transparent var(--C-blue) var(--C-blue) transparent;
+  border-color: transparent var(--C-red) var(--C-red) transparent;
 }
 .contact .form .left-border {
-  border-color: transparent transparent var(--C-blue) var(--C-blue);
+  border-color: transparent transparent var(--C-red) var(--C-red);
 }
 .contact .form label {
   position: absolute;
@@ -690,12 +549,13 @@ header .language ul::before {
 .contact .form button {
   height: 40px;
   width: 300px;
-  background-color: var(--C-blue);
+  background-color: var(--C-black);
   outline: none;
   border: none;
 }
 .contact .form button a {
   color: white;
+  font-weight: bold;
 }
 /* End Contact Section*/
 /*_____________________________________________*/
@@ -719,7 +579,7 @@ footer .cisco-logo img {
 }
 footer .social-media a {
   font-size: 20px;
-  color: var(--C-blue);
+  color: var(--C-black);
   margin-right: 20px;
 }
 /* End Footer Section*/
@@ -749,7 +609,7 @@ footer .social-media a {
 .connect h3 {
   font-size: 24px;
   text-transform: uppercase;
-  color: var(--C-blue);
+  color: var(--C-black);
 }
 .connect .container .input-info {
   position: relative;
@@ -759,7 +619,7 @@ footer .social-media a {
   width: 300px;
   background-color: #f2f2f2;
   outline: none;
-  border: 3px solid var(--C-blue);
+  border: 3px solid var(--C-red);
 }
 @media (max-width: 767px) {
   .connect .container {
@@ -786,13 +646,14 @@ footer .social-media a {
   padding: 10px 20px;
   font-size: 18px;
   text-transform: uppercase;
-  background-color: var(--C-blue);
+  background-color: var(--C-black);
   color: white;
+  font-weight: bold;
   border: none;
 }
 .connect .social-media a {
   font-size: 22px;
-  color: var(--C-blue);
+  color: var(--C-black);
   margin-right: 20px;
 }
 /* End Connect Section*/
